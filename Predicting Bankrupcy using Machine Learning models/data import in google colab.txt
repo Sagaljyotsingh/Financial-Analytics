@@ -1,0 +1,4 @@
+from google.colab import files
+df = files.upload()
+import io
+dt = pd.read_excel(io.BytesIO(df['Bankruptcy_data(1)(1).xlsx']))
